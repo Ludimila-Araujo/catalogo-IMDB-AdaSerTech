@@ -22,7 +22,7 @@ public abstract class Pessoa {
 
         //getters and setters:
 
-        public long getId(){
+        public Long getId(){
             return id;
         }
 
@@ -37,6 +37,23 @@ public abstract class Pessoa {
         public void setNome(String nome) {
             this.nome = nome;
         }
+
+        public LocalDate getDataNascimento() {
+            return dataNascimento;
+        }
+
+        public void setDataNascimento(LocalDate dataNascimento) {
+            this.dataNascimento = dataNascimento;
+        }
+
+        public String getNacionalidade() {
+            return nacionalidade;
+        }
+
+        public void setNacionalidade(String nacionalidade) {
+            this.nacionalidade = nacionalidade;
+        }
+
 
         //métodos:
 
