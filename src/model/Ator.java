@@ -1,0 +1,28 @@
+package model;
+
+import java.time.LocalDate;
+
+public class Ator extends Pessoa {
+
+    //atributos da classe-filha "Ator:
+
+    private double cache;
+
+    //construtor (levando em consideração a Herança da classe-mãe "Pessoa")
+
+    public Ator(Long id, String nome, LocalDate dataNascimento, String nacionalidade, double cache){
+        super(id, nome, dataNascimento, nacionalidade);
+        this.cache = cache;
+    }
+
+    // getters e setters:
+    public double getCache(){
+        return cache;
+    }
+
+    public void setCache(double cache){
+        this.cache = cache;
+    }
+
+
+}
