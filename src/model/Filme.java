@@ -7,20 +7,21 @@ import java.util.List;
 public class Filme {
 
     //atributos:
+    private static Long idCounter = 1L;
 
-    private Long id;
+    private final Long id;
     private String nome;
     private LocalDate dataLancamento;
     private double orcamento;
     private String descricao;
     private Diretor diretor;
 
-    private List<Ator> atores = new ArrayList<>();
+    private final List<Ator> atores = new ArrayList<>();
 
     //construtor:
 
-    public Filme (Long id, String nome, LocalDate dataLancamento, double orcamento, String descricao) {
-        this.id = id;
+    public Filme (String nome, LocalDate dataLancamento, double orcamento, String descricao) {
+        this.id = idCounter++;
         this.nome = nome;
         this.dataLancamento = dataLancamento;
         this.orcamento = orcamento;
@@ -32,10 +33,6 @@ public class Filme {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNome() {

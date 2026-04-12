@@ -14,6 +14,6 @@ public class FilmeService {
 
     public void cadastrarFilme(Filme filme) {
         filmes.add(filme);
-        System.out.println("Filme cadastrado com sucesso: " + filme.getNome());
+        System.out.println("\nFilme cadastrado com sucesso: " + filme.getNome());
     }
 }
