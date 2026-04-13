@@ -6,15 +6,16 @@ public abstract class Pessoa {
 
         //atributos:
 
-        private Long id;
+        private static  Long idCounter = 1L; //contador estático para as Pessoas
+        private final Long id; //blindagem do id com o "final"
         private String nome;
         private LocalDate dataNascimento;
         private String nacionalidade;
 
         //construtor:
 
-        public Pessoa(Long id, String nome, LocalDate dataNascimento, String nacionalidade){
-            this.id = id;
+        public Pessoa(String nome, LocalDate dataNascimento, String nacionalidade){
+            this.id = idCounter++; //id gerado automaticamente
             this.nome = nome;
             this.dataNascimento = dataNascimento;
             this.nacionalidade = nacionalidade;
@@ -26,10 +27,7 @@ public abstract class Pessoa {
             return id;
         }
 
-        public void setId(Long id){
-            this.id = id;
-        }
-
+        // não é preciso um setId porque agora o mesmo é gerado atuomaticamente.
         public String getNome(){
             return nome;
         }

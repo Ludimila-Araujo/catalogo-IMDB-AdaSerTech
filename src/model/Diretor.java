@@ -10,8 +10,8 @@ public class Diretor extends Pessoa{
 
     //construtor (considerando Herança da classe-mãe "Pessoa")
 
-    public Diretor(Long id, String nome, LocalDate dataNascimento, String nacionalidade, String estilo){
-        super(id, nome, dataNascimento, nacionalidade);
+    public Diretor(String nome, LocalDate dataNascimento, String nacionalidade, String estilo){
+        super(nome, dataNascimento, nacionalidade);
         this.estilo = estilo;
     }
 
