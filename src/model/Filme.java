@@ -8,7 +8,8 @@ public class Filme {
 
     //atributos:
 
-    private Long id;
+    private static Long idCounter = 1L;
+    private final Long id;
     private String nome;
     private LocalDate dataLancamento;
     private double orcamento;
@@ -19,8 +20,8 @@ public class Filme {
 
     //construtor:
 
-    public Filme (Long id, String nome, LocalDate dataLancamento, double orcamento, String descricao) {
-        this.id = id;
+    public Filme (String nome, LocalDate dataLancamento, double orcamento, String descricao) {
+        this.id = idCounter++;
         this.nome = nome;
         this.dataLancamento = dataLancamento;
         this.orcamento = orcamento;
@@ -32,10 +33,6 @@ public class Filme {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNome() {
