@@ -42,7 +42,7 @@ public class PessoaService {
                 return diretorAtual;
             }
         }
-        System.out.println("⚠️ Diretor/Diretora não encontrado(a) no sistema.");
+        System.out.println("⚠️ Diretor(a) não encontrado(a) no sistema.");
         return null;
     }
 
