@@ -10,8 +10,8 @@ public class Ator extends Pessoa {
 
     //construtor (levando em consideração a Herança da classe-mãe "Pessoa")
 
-    public Ator(Long id, String nome, LocalDate dataNascimento, String nacionalidade, double cache){
-        super(id, nome, dataNascimento, nacionalidade);
+    public Ator(String nome, LocalDate dataNascimento, String nacionalidade, double cache){
+        super(nome, dataNascimento, nacionalidade);
         this.cache = cache;
     }
 
