@@ -160,7 +160,6 @@ public class Main {
                     System.out.print("Digite o nome do filme: ");
                     String nomeDoFilme = sc.nextLine();
 
-
                 }
 
                 case 0 -> System.out.println("\nEncerrando o programa... Até mais!");
