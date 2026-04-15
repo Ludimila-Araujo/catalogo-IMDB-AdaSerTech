@@ -13,6 +13,7 @@ public class Ator extends Pessoa {
     public Ator(String nome, LocalDate dataNascimento, String nacionalidade, double cache){
         super(nome, dataNascimento, nacionalidade);
         this.cache = cache;
+
     }
 
     // getters e setters:
